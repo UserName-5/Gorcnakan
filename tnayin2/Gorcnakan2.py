@@ -6,9 +6,9 @@ def my_decoder(de_bytes: bytes):
     decoded = ''.join([chr(int(i, 2)) for i in de_bytes.split()])
     return decoded
 
-test_str = input('enter: ')
+main_txt = input('enter: ')
 
-temp = my_encoder(test_str)
+temp = my_encoder(main_txt)
 
 print(temp.decode('ascii'))
 
